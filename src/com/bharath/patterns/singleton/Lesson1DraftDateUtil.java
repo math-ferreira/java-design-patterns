@@ -1,8 +1,8 @@
 package com.bharath.patterns.singleton;
 
-public class DraftDateUtil {
+public class Lesson1DraftDateUtil {
 
-    private DraftDateUtil() {
+    private Lesson1DraftDateUtil() {
     }
 
     /* Lazy strategy -  o mais indicado, instanciado somente quando utilizado
@@ -19,15 +19,15 @@ public class DraftDateUtil {
     /private static DateUtil instance = new DateUtil();*/
 
     // Eager v2 static block
-    private static DraftDateUtil instance;
+    private static Lesson1DraftDateUtil instance;
 
     // Eager v2 static block: executed when class is loaded into memory
     static {
-        instance = new DraftDateUtil();
+        instance = new Lesson1DraftDateUtil();
     }
 
     // Eager strategy v1 and v2
-    public static DraftDateUtil getInstance() {
+    public static Lesson1DraftDateUtil getInstance() {
         return instance;
     }
 
