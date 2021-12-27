@@ -1,4 +1,4 @@
-package com.bharath.patterns.singleton;
+package com.bharath.patterns.singleton.task;
 
 import java.io.Serializable;
 
